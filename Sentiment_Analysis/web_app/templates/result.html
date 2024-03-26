@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif; /* Arial font */
+            color: #333; /* Dark gray text color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for container */
+        }
+        h1 {
+            color: #4b0082; /* Indigo heading color */
+            font-size: 24px; /* Heading font size */
+            margin-bottom: 20px; /* Bottom margin for heading */
+        }
+        h3 {
+            color: #008080; /* Teal color for prediction text */
+            font-size: 18px; /* Prediction font size */
+        }
+        button {
+            width: 120px; /* Button width */
+            height: 40px; /* Button height */
+            margin-top: 20px; /* Top margin for button */
+            border-radius: 5px; /* Rounded corners */
+            border: none; /* No border */
+            font-size: 16px; /* Button font size */
+            font-weight: bold; /* Bold text */
+            color: #fff; /* White text color */
+            background-color: #800080; /* Purple background color */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        button:hover {
+            background-color: #4b0082; /* Darker purple on hover */
+        }
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent for better consistency */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction:</h1>
+        <h3>
+            {% if prediction[0] == 'Positive' %}
+                {{ prediction[0] }} : 😊😊👍 
+            {% elif prediction[0] == 'Negative' %}
+                {{ prediction[0] }} : 😢😢👎 
+            {% else %}
+                {{ prediction[0] }}
+            {% endif %}
+        </h3>
+        <button><a href="/">Return to home page</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Prediction</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif; /* Arial font */
+        color: #333; /* Dark gray text color */
+    }
+    h1 {
+        color: #6d2d00; /* Dark brown heading color */
+        font-size: 24px; /* Heading font size */
+        margin-top: 30px; /* Top margin for heading */
+    }
+    .container {
+        text-align: center;
+        margin-top: 50px; /* Top margin for container */
+    }
+    textarea {
+        font-size: 16px; /* Textarea font size */
+        font-style: italic; /* Italic text */
+        padding: 10px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        border: 2px solid #999; /* Light gray border */
+        width: 80%; /* Width */
+        max-width: 600px; /* Maximum width */
+        margin-bottom: 20px; /* Bottom margin */
+    }
+    button {
+        width: 100px; /* Button width */
+        height: 40px; /* Button height */
+        margin: 10px; /* Margin */
+        border-radius: 5px; /* Rounded corners */
+        border: 1px solid #333; /* Dark gray border */
+        font-size: 18px; /* Button font size */
+        font-weight: bold; /* Bold text */
+        color: #fff; /* White text color */
+        background-color: #008080; /* Teal background color */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    button:hover {
+        background-color: #006666; /* Darker teal on hover */
+    }
+</style>
+<body>
+    <div class="container">  
+        <h1>💡Welcome to Sentiment Analysis Web Application!</h1>
+        <form action="/prediction" method="post">
+            <textarea id="text" name="review" placeholder="Enter your review here" rows="6" cols="60"></textarea>
+            <br>
+            <button>Predict</button>
+        </form>
+    </div>
+</body>
+</html>
