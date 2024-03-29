@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1711649464902
+current_stage: None
+description: ''
+last_updated_timestamp: 1711649464902
+name: sentiment_analysis_prediction
+run_id: c745ec91972d4e87a1ac8ebe6117b0c0
+run_link: ''
+source: file:///C:/Users/NAVYA/Downloads/MY_PYTHON_PRACTICE/Innomatics_internship/jup_vir_env/Scripts/ML_flow_Sentiment_analysis/mlruns/972715570874921247/c745ec91972d4e87a1ac8ebe6117b0c0/artifacts/best_estimator
+status: READY
+status_message: null
+storage_location: file:///C:/Users/NAVYA/Downloads/MY_PYTHON_PRACTICE/Innomatics_internship/jup_vir_env/Scripts/ML_flow_Sentiment_analysis/mlruns/972715570874921247/c745ec91972d4e87a1ac8ebe6117b0c0/artifacts/best_estimator
+user_id: null
+version: 2
